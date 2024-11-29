@@ -32,6 +32,7 @@ btnTrigger.addEventListener("click", async () => {
         const answer = await fetchAnswer();
         answerContainer.textContent = answer;
         setTimeout(() => {
+            document.getElementById("input").value = "";
             answerContainer.textContent = "";
           }, 5000);
     }else {
